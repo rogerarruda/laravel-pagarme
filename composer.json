@@ -5,7 +5,7 @@
     "require": {
         "php": "^7.0.0",
         "laravel/framework": "5.5.*",
-        "pagarme/pagarme-php": "^3.7",
+        "pagarme/pagarme-php": "^3.7"
     },
     "authors": [
         {
