@@ -1,0 +1,32 @@
+{
+    "name": "rogerarruda/laravel-pagarme",
+    "description": "Integração da API PHP PagarMe com o Laravel",
+    "type": "library",
+    "require": {
+        "php": "^7.0.0",
+        "laravel/framework": "5.5.*",
+        "pagarme/pagarme-php": "^3.7",
+    },
+    "authors": [
+        {
+            "name": "rogerarruda",
+            "email": "roger@interative.info"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RogerArruda\\LaravelPagarMe\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RogerArruda\\LaravelPagarMe\\Providers\\PagarMeServiceProvider"
+            ],
+            "aliases": {
+                "PagarMe": "RogerArruda\\LaravelPagarMe\\Facades\\PagarMeFacade"
+            }
+        }
+    }
+}
