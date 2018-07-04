@@ -15,7 +15,9 @@ class PagarMeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([__DIR__ . '/../config/pagarme.php' => config_path('pagarme.php')], 'config');
+        $this->publishes([
+            __DIR__ . '/../config/pagarme.php' => config_path('pagarme.php')
+        ], 'pagarme');
     }
 
     /**
